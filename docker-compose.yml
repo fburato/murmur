@@ -1,0 +1,16 @@
+version: '3.0'
+services:
+    murmur:
+        image: murmur:latest
+        build: .
+        ports:
+            - "64738:64738/tcp"
+            - "64738:64738/udp"
+        volumes:
+            - murmur:/murmur
+        environment:
+            - DATABASE=/murmur/db/murmur.sqlite
+
+volumes: 
+    murmur:
+        external: true
