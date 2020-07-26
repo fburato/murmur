@@ -1,1 +1,3 @@
-.vscode
+*
+!entrypoint.sh
+!murmur.ini.template
