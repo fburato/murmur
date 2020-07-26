@@ -4,7 +4,7 @@ This repository contains the Dockerfile to build a docker image containing the l
 
 Key characterstics of this docker image compared to others:
 
-- Built on alpine, so the image is smaller than the official one (~46MB vs +200MB).
+- Built on alpine, so the image is smaller than the official one (~68MB vs +200MB).
 - The configuration of the server is completely externalised to environment variables, i.e. all the content of the `mumble.ini` file can be replaced on startup.
 - It adds support for Postgres as a database
 
