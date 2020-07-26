@@ -20,14 +20,14 @@ services:
     postgres:
         image: postgres:12-alpine
         ports:
-            - 5432:5432
+            - 5432
         volumes:
             - murmur:/data
         environment:
             - POSTGRES_USER=murmur
             - POSTGRES_PASSWORD=password
             - PGDATA=/data/postgres
-
+        restart: unless-stopped
 volumes: 
     murmur:
         external: true
